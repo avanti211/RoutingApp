@@ -1,0 +1,37 @@
+{
+    "student":[
+        {
+            "firstName":"Sonal",
+            "lastName":"C",
+            "contactNo":9970026739
+            
+        },
+        {
+            "firstName":"Parimal",
+            "lastName":"S",
+            "contactNo":9838847509
+                       
+        },
+        {
+           "firstName":"Nashiman",
+            "lastName":"S",
+            "contactNo":9809361298    
+            
+        },
+        {
+            "firstName":"Atul",
+            "lastName":"A",
+            "contactNo":9234292838
+                       
+        },
+        {
+                        
+            "firstName":"Priyanka",
+            "lastName":"P",
+            "contactNo":9056234589
+        }
+        
+        
+    ]
+    
+}

@@ -1,0 +1,57 @@
+<div class="container">
+    
+    <div class="col-md-2"></div>
+    
+    <div class="col-md-8">
+        <div class="panel panel-primary">
+            <div class="panel-heading">Employee Form</div>
+                <div class="panel-body">
+      	             <form class="form-horizontal" name="myForm">
+          
+                        <div class="form-group">
+                            <label class="control-label col-md-4">First Name:</label>
+                            <div class="col-md-5">                    
+                                <input type="text" name="fname" ng-model="fname" class="form-control" required>    
+                                
+                            </div>
+                        </div>
+                         
+                        <div class="form-group">
+                            <label class="control-label col-md-4">Last Name:</label>
+                            <div class="col-md-5">                    
+                                <input type="text" name="lname" ng-model="lname" class="form-control" required>                    
+                            </div>
+                        </div>
+                         
+                         
+                         <div class="form-group">
+                            <label class="control-label col-md-4">Contact:</label>
+                            <div class="col-md-5">                    
+                                <input type="number" name="contact" ng-model="contact" class="form-control" required>                    
+                            </div>
+                        </div>
+                         
+                        <div class="form-group">
+                            <label class="control-label col-md-4">Email Id:</label>
+                            <div class="col-md-5">                    
+                                <input type="email" name="email" ng-model="email" class="form-control" required>             
+                            </div>
+                        </div>
+                         
+                         <div class="form-group">
+                            <label class="control-label col-md-4">Emp Id:</label>
+                            <div class="col-md-5">                    
+                                <input type="number" name="empid" ng-model="empid" class="form-control" required>                    
+                            </div>
+                        </div>
+                         
+                         <div class="col-md-3 col-sm-offset-5">
+                            <input type="submit" value="Submit"  class="btn btn-primary" ng-disabled="myForm.fname.$pristine || myForm.lname.$pristine || myForm.contact.$pristine || myForm.email.$pristine || myForm.email.pristine || myForm.empid.$pristine "/>
+                         </div>
+                     </form>
+                </div>
+        </div>
+    </div>
+    
+     <div class="col-md-2"></div>
+</div>

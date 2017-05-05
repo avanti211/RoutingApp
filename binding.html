@@ -1,0 +1,44 @@
+<div class="container" ng-controller="bindingCtrl">
+
+    <div class="col-md-3"></div>
+    <div class="col-md-6" style="border: 1px solid black">
+        <form class="form-horizontal" name="myForm">
+            
+            <div class="form-group">
+                <label class="control-label col-sm-4">First Name:</label>
+                <div class="col-sm-6"> 
+                    <input type="text" class="form-control" id="fname" name="fname" ng-model="firstName" placeholder="Enter First Name"/>                    
+                </div>
+            </div>
+            
+             <div class="form-group">
+                <label class="control-label col-sm-4">Last Name:</label>
+                <div class="col-sm-6"> 
+                    <input type="text" class="form-control" id="lname" name="lname" ng-model="lastName" placeholder="Enter Last Name"/>
+                    
+                </div>
+            </div>
+            
+           <div  class="panel panel-default">
+            
+                <div class="form-group">
+                    <label class="control-label col-sm-4">First Name:</label>
+                    <div class="col-sm-6">                         
+                         <div ng-show="myForm.fname.$dirty">{{firstName}}</div>
+                    </div>
+                </div>
+               <div class="form-group">
+                    <label class="control-label col-sm-4">Last Name:</label>
+                    <div class="col-sm-6">                        
+                        <div ng-hide="myForm.lname.$pristine">{{lastName}}</div>
+                    </div>
+                </div>
+               
+           </div>
+            
+        </form>
+    </div>
+    <div class="col-md-3"></div>  
+       
+    
+</div>
